@@ -19,7 +19,8 @@ pipeline {
 
         stage('Archive') {
             steps {
-                archieveArtifacts artifacts 'target/*.war', fingerprint:true
+               // archieveArtifacts artifacts 'target/*.war', fingerprint:true
+                archieveArtifcats artifacts 'taget/*.war' , fingerprint:true
             }
         }
 
